@@ -28,6 +28,23 @@
         </p>
 
         <button>PRESS ME</button>
+        <button onclick="showContent()">PRESS ME</button>
+
+<div id="content" style="display: none;">
+    <h2>🎉 Surprise!</h2>
+    <p>
+        You pressed the button! This content appeared using JavaScript.
+    </p>
+    <p>
+        My website is working correctly with HTML, CSS and JavaScript.
+    </p>
+</div>
+
+<script>
+    function showContent() {
+        document.getElementById("content").style.display = "block";
+    }
+</script>
     </main>
 
     <footer>
